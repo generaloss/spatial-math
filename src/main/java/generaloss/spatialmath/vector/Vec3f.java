@@ -4,7 +4,7 @@ import generaloss.spatialmath.Maths;
 import generaloss.spatialmath.Mathc;
 import generaloss.spatialmath.matrix.Matrix3f;
 import generaloss.spatialmath.matrix.Matrix4f;
-import spatialmath.matrix.*;
+import generaloss.spatialmath.matrix.*;
 import java.util.Objects;
 
 public class Vec3f {

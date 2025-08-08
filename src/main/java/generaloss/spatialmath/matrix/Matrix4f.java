@@ -5,7 +5,7 @@ import generaloss.spatialmath.Mathc;
 import generaloss.spatialmath.Maths;
 import generaloss.spatialmath.Quaternion;
 import generaloss.spatialmath.vector.*;
-import spatialmath.vector.*;
+import generaloss.spatialmath.vector.*;
 
 import java.util.Arrays;
 
