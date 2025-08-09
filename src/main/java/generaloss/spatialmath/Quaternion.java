@@ -78,10 +78,10 @@ public class Quaternion {
 
 
     public Quaternion mul(float w, float x, float y, float z) {
-        this.w = this.w * w - this.x * x - this.y * y - this.z * z;
-        this.x = this.w * x + this.x * w + this.y * z - this.z * y;
-        this.y = this.w * y + this.y * w + this.z * x - this.x * z;
-        this.z = this.w * z + this.z * w + this.x * y - this.y * x;
+        this.w = (this.w * w - this.x * x - this.y * y - this.z * z);
+        this.x = (this.w * x + this.x * w + this.y * z - this.z * y);
+        this.y = (this.w * y + this.y * w + this.z * x - this.x * z);
+        this.z = (this.w * z + this.z * w + this.x * y - this.y * x);
         return this;
     }
 
@@ -113,7 +113,7 @@ public class Quaternion {
         if(len == 0F || len == 1F)
             return this;
 
-        len = 1F / Mathc.sqrt(len);
+        len = (1F / Mathc.sqrt(len));
         w *= len;
         x *= len;
         y *= len;
@@ -311,11 +311,11 @@ public class Quaternion {
 
 
     public static Quaternion fromRotation(float x, float y, float z) {
-        final Quaternion quaternionernion = new Quaternion();
-        quaternionernion.mul(new Quaternion(Mathc.sin(x * 0.5F), 0F, 0F, Mathc.cos(x * 0.5F)));
-        quaternionernion.mul(new Quaternion(0F, Mathc.sin(y * 0.5F), 0F, Mathc.cos(y * 0.5F)));
-        quaternionernion.mul(new Quaternion(0F, 0F, Mathc.sin(z * 0.5F), Mathc.cos(z * 0.5F)));
-        return quaternionernion;
+        final Quaternion quaternion = new Quaternion();
+        quaternion.mul(new Quaternion(Mathc.sin(x * 0.5F), 0F, 0F, Mathc.cos(x * 0.5F)));
+        quaternion.mul(new Quaternion(0F, Mathc.sin(y * 0.5F), 0F, Mathc.cos(y * 0.5F)));
+        quaternion.mul(new Quaternion(0F, 0F, Mathc.sin(z * 0.5F), Mathc.cos(z * 0.5F)));
+        return quaternion;
     }
 
 }
