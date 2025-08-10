@@ -14,13 +14,6 @@ public class Maths {
     public static final float SQRT3 = Mathc.sqrt(3D);
     public static final float SQRT4 = Mathc.sqrt(4D);
 
-    public static final float NANOS_IN_SECf = 1_000_000_000F;
-    public static final float NANOS_IN_MSf = 1_000_000F;
-    public static final float MILLIS_IN_SECf = 1_000F;
-    public static final int NANOS_IN_SECi = 1_000_000_000;
-    public static final int NANOS_IN_MSi = 1_000_000;
-    public static final int MILLIS_IN_SECi = 1_000;
-
     private static final long[] POWERS_OF_TEN = { // just yes.
         1L,
         10L,
